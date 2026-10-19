@@ -86,6 +86,26 @@
       .container { padding: 28px 16px 56px; }
       h1 { font-size: 1.35rem; }
     }
+
+    .profile-photo {
+      float: right;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;        /* 圆形头像；想要方形就删掉这行 */
+      margin: 0 0 12px 24px;     /* 右侧和下侧留白，左侧与文字隔开 */
+    }
+
+    /* 移动端取消浮动，改为居中 */
+    @media (max-width: 600px) {
+      .profile-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        width: 140px;
+        height: 140px;
+      }
+    }
   </style>
 </head>
 <body>
